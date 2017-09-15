@@ -3,6 +3,7 @@ MAINTAINER antonioj.mattos@gmail.com
 
 ENV DEBIAN_FRONTEND=noninteractive LANG=C.UTF-8
 
+
 RUN wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | apt-key add - \
  && echo 'deb http://apt.postgresql.org/pub/repos/apt/ jessie-pgdg main' > /etc/apt/sources.list.d/pgdg.list
 
